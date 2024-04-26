@@ -65,7 +65,7 @@ def test_edit_assignment_student_1(client, h_student_1):
         headers=h_student_1,
         json={
             'content': content,
-            'id': 2
+            # 'id': 2
         })
 
     assert response.status_code == 200
